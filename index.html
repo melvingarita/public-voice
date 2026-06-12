@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thoughts on Banking & Institutional Leadership · Melvin Garita</title>
+    <meta name="description" content="Perspectives on institutional leadership in banking. Featured series: Strategic Divergence — why financial institutions converge and how deliberate divergence creates enterprise value. Published in La República, El Financiero, CNN en Español.">
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="Melvin Garita Mora">
+    <link rel="canonical" href="https://melvingarita.com/thoughts/">
+    <meta property="og:title" content="Thoughts — Melvin Garita">
+    <meta property="og:description" content="Perspectives on institutional leadership in banking — and how financial institutions create, sustain, or quietly erode value.">
+    <meta property="og:image" content="https://melvingarita.com/og-image.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:type" content="image/jpeg">
+    <meta property="og:url" content="https://melvingarita.com/thoughts/">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Melvin Garita">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Thoughts — Melvin Garita">
+    <meta name="twitter:description" content="Perspectives on institutional leadership in banking — and how financial institutions create, sustain, or quietly erode value.">
+    <meta name="twitter:image" content="https://melvingarita.com/og-image.jpg">
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <script type="application/ld+json">
+    {"@context":"https://schema.org","@type":"Person","name":"Melvin Garita Mora","jobTitle":"Deputy General Manager — Operations","worksFor":{"@type":"Organization","name":"Banco Nacional de Costa Rica"},"url":"https://melvingarita.com","sameAs":["https://linkedin.com/in/melvingarita"],"image":"https://melvingarita.com/MG.jpeg"}
+    </script>
+    <style>
+        :root { --navy: #1B2A4A; --gold: #C9A96E; --warm-gray: #F5F3F0; --dark: #2D2D2D; --white: #FFFFFF; }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        html { scroll-behavior: smooth; scroll-padding-top: 90px; }
+        body { font-family: 'Inter', sans-serif; color: var(--dark); line-height: 1.7; }
+
+        /* STANDARDIZED NAV */
+        .nav { position: fixed; top: 0; left: 0; right: 0; height: 64px; background: rgba(27,42,74,0.97); backdrop-filter: blur(10px); z-index: 100; border-bottom: 1px solid rgba(201,169,110,0.15); }
+        .nav-container { max-width: 1200px; margin: 0 auto; padding: 0 40px; height: 100%; display: flex; align-items: center; justify-content: space-between; }
+        .nav-logo { font-family: 'Playfair Display', serif; font-size: 1.2rem; font-weight: 700; letter-spacing: 0.6px; color: #fff; text-decoration: none; }
+        .nav-links { display: flex; list-style: none; gap: 1.5rem; align-items: center; margin: 0; padding: 0; }
+        .nav-links a { color: rgba(255,255,255,0.8); text-decoration: none; font-family: 'Inter', sans-serif; font-size: 0.85rem; font-weight: 400; letter-spacing: 0.5px; text-transform: uppercase; position: relative; transition: color 0.25s ease; }
+        .nav-links a::after { content: ''; position: absolute; left: 0; bottom: -4px; width: 0; height: 1px; background: var(--gold); transition: width 0.25s ease; }
+        .nav-links a:hover { color: var(--gold); }
+        .nav-links a:hover::after { width: 100%; }
+        .nav-links a.active { color: var(--gold); }
+        .nav-links a.active::after { width: 100%; }
+        .nav-cta { color: var(--gold) !important; border: 1px solid var(--gold); padding: 6px 16px; border-radius: 3px; font-weight: 500; }
+        .nav-cta:hover { background: var(--gold); color: var(--navy) !important; }
+        .nav-cta::after { display: none !important; }
+        .hamburger { display: none; background: none; border: none; color: white; font-size: 1.5rem; cursor: pointer; padding: 4px; }
+
+        /* PAGE STYLES */
+        .page-header { padding: 120px 40px 60px; background: var(--navy); text-align: center; }
+        .page-header h1 { font-family: 'Playfair Display', serif; color: var(--white); font-size: 2.8rem; margin-bottom: 16px; }
+        .page-header .subtitle { color: rgba(255,255,255,0.75); font-size: 1.1rem; max-width: 700px; margin: 0 auto 20px; line-height: 1.6; }
+        .media-badges { color: var(--gold); font-size: 0.85rem; letter-spacing: 1px; margin-top: 16px; }
+
+        .section { max-width: 900px; margin: 0 auto; padding: 70px 40px; }
+        .section-label { font-family: 'Inter', sans-serif; font-size: 0.75rem; text-transform: uppercase; letter-spacing: 2px; color: var(--gold); margin-bottom: 12px; }
+        .section h2 { font-family: 'Playfair Display', serif; font-size: 1.8rem; color: var(--navy); margin-bottom: 20px; }
+
+        /* FEATURED SERIES */
+        .featured { background: linear-gradient(135deg, #1B2A4A 0%, #243556 100%); padding: 80px 40px; }
+        .featured-inner { max-width: 800px; margin: 0 auto; }
+        .featured-label { font-size: 0.75rem; text-transform: uppercase; letter-spacing: 2px; color: var(--gold); margin-bottom: 24px; }
+        .featured-question { font-family: 'Playfair Display', serif; font-size: 1.5rem; color: var(--white); line-height: 1.5; margin-bottom: 20px; }
+        .featured-text { color: rgba(255,255,255,0.75); font-size: 1rem; line-height: 1.7; margin-bottom: 40px; }
+
+        .phases-grid { margin: 40px 0; }
+        .phase-item { display: flex; align-items: baseline; gap: 16px; padding: 14px 0; border-bottom: 1px solid rgba(255,255,255,0.06); }
+        .phase-number { font-family: 'Playfair Display', serif; color: var(--gold); font-size: 0.9rem; min-width: 20px; }
+        .phase-name { color: var(--white); font-size: 0.95rem; }
+        .phase-count { color: rgba(255,255,255,0.5); font-size: 0.8rem; margin-top: 20px; font-style: italic; }
+        .featured-cta { display: inline-block; margin-top: 30px; color: var(--gold); border: 1px solid var(--gold); padding: 12px 28px; text-decoration: none; font-size: 0.85rem; letter-spacing: 0.5px; border-radius: 3px; transition: all 0.25s ease; }
+        .featured-cta:hover { background: var(--gold); color: var(--navy); }
+
+        /* NEXT ARTICLE */
+        .next-section { background: var(--warm-gray); padding: 60px 40px; }
+        .next-inner { max-width: 800px; margin: 0 auto; }
+        .next-card { background: white; padding: 40px; border-left: 3px solid var(--gold); }
+        .next-card h3 { font-family: 'Playfair Display', serif; font-size: 1.3rem; color: var(--navy); margin-bottom: 12px; }
+        .next-card p { color: #666; font-size: 0.95rem; line-height: 1.6; }
+        .next-date { color: var(--gold); font-size: 0.8rem; letter-spacing: 1px; text-transform: uppercase; margin-top: 16px; }
+
+        /* ARTICLES LIST */
+        .articles-section { padding: 70px 40px; max-width: 900px; margin: 0 auto; }
+        .lang-badge { display: inline-block; background: var(--navy); color: var(--gold); font-size: 0.65rem; padding: 2px 8px; border-radius: 2px; margin-left: 8px; letter-spacing: 1px; vertical-align: middle; }
+        .article-card { padding: 24px 0; border-bottom: 1px solid #eee; }
+        .article-card h3 { font-family: 'Playfair Display', serif; font-size: 1.15rem; color: var(--navy); margin-bottom: 6px; }
+        .article-meta { color: #999; font-size: 0.8rem; margin-bottom: 8px; }
+        .article-link { color: var(--gold); font-size: 0.85rem; text-decoration: none; }
+        .article-link:hover { text-decoration: underline; }
+
+        /* COMPACT LIST */
+        .compact-section { background: var(--warm-gray); padding: 60px 40px; }
+        .compact-inner { max-width: 900px; margin: 0 auto; }
+        .compact-intro { color: #666; font-size: 0.9rem; font-style: italic; margin-bottom: 24px; line-height: 1.6; }
+        .compact-list { list-style: none; padding: 0; }
+        .compact-list li { display: flex; justify-content: space-between; align-items: baseline; padding: 12px 0; border-bottom: 1px solid rgba(0,0,0,0.06); font-size: 0.9rem; }
+        .item-title { color: var(--dark); }
+        .item-date { color: #999; font-size: 0.8rem; white-space: nowrap; margin-left: 20px; }
+
+        /* MEDIA */
+        .media-section { padding: 70px 40px; max-width: 900px; margin: 0 auto; }
+        .media-grid { display: grid; gap: 16px; margin-top: 24px; }
+        .media-item { display: flex; justify-content: space-between; align-items: baseline; padding: 16px 0; border-bottom: 1px solid #eee; }
+        .media-item .outlet { font-weight: 600; color: var(--navy); min-width: 140px; font-size: 0.9rem; }
+        .media-item .topic { color: var(--dark); font-size: 0.9rem; flex: 1; margin: 0 20px; }
+        .media-item .date { color: #999; font-size: 0.8rem; white-space: nowrap; }
+        .media-item a { color: var(--gold); text-decoration: none; font-size: 0.8rem; margin-left: 12px; }
+
+        /* ACADEMIC */
+        .academic-section { background: var(--warm-gray); padding: 60px 40px; }
+        .academic-inner { max-width: 900px; margin: 0 auto; }
+        .academic-card { background: white; padding: 30px; margin-bottom: 20px; border-left: 3px solid var(--gold); }
+        .academic-card h3 { font-family: 'Playfair Display', serif; font-size: 1.1rem; color: var(--navy); margin-bottom: 4px; }
+        .academic-card .meta { color: #999; font-size: 0.8rem; margin-bottom: 10px; }
+        .academic-card p { color: #666; font-size: 0.9rem; line-height: 1.6; }
+
+        /* FOLLOW */
+        .follow-section { padding: 70px 40px; max-width: 900px; margin: 0 auto; text-align: center; }
+        .follow-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; margin-top: 30px; }
+        .follow-card { background: var(--warm-gray); padding: 30px; border-radius: 4px; text-align: center; }
+        .follow-card h3 { font-family: 'Playfair Display', serif; color: var(--navy); font-size: 1rem; margin-bottom: 8px; }
+        .follow-card p { color: #666; font-size: 0.85rem; margin-bottom: 16px; }
+        .follow-card a { color: var(--gold); font-size: 0.85rem; text-decoration: none; }
+
+        /* CLOSING */
+        .closing { background: var(--navy); padding: 80px 40px; text-align: center; }
+        .closing-quote { font-family: 'Playfair Display', serif; font-size: 1.4rem; color: var(--gold); font-style: italic; max-width: 600px; margin: 0 auto 30px; }
+        .closing-ctas { display: flex; gap: 20px; justify-content: center; flex-wrap: wrap; }
+        .closing-ctas a { color: rgba(255,255,255,0.7); text-decoration: none; font-size: 0.85rem; transition: color 0.25s; }
+        .closing-ctas a:hover { color: var(--gold); }
+
+        /* CONNECT CTA */
+        .connect { padding: 60px 40px; text-align: center; background: var(--warm-gray); }
+        .connect h2 { font-family: 'Playfair Display', serif; color: var(--navy); font-size: 1.6rem; margin-bottom: 12px; }
+        .connect p { color: #666; font-size: 0.95rem; max-width: 500px; margin: 0 auto 24px; font-style: italic; }
+        .connect-links { display: flex; gap: 24px; justify-content: center; flex-wrap: wrap; }
+        .connect-links a { color: var(--gold); text-decoration: none; font-size: 0.9rem; }
+
+        /* FOOTER */
+        footer { background: var(--navy); padding: 30px 40px; text-align: center; color: rgba(255,255,255,0.4); font-size: 0.75rem; }
+        footer a { color: var(--gold); text-decoration: none; }
+
+        /* ANIMATIONS */
+        .fade-in { opacity: 0; transform: translateY(20px); transition: opacity 0.6s ease, transform 0.6s ease; }
+        .fade-in.visible { opacity: 1; transform: translateY(0); }
+
+        /* MOBILE */
+        @media (max-width: 768px) {
+            .nav-container { padding: 0 20px; }
+            .hamburger { display: block; z-index: 101; }
+            .nav-links { display: none; position: absolute; top: 64px; left: 0; right: 0; flex-direction: column; gap: 0; background: var(--navy); border-bottom: 1px solid rgba(255,255,255,0.08); z-index: 100; }
+            .nav-links.active { display: flex; }
+            .nav-links li { width: 100%; }
+            .nav-links a { display: block; padding: 18px 24px; border-bottom: 1px solid rgba(255,255,255,0.06); font-size: 0.9rem; }
+            .nav-links a::after { display: none; }
+            .nav-cta { margin: 16px 24px 24px; text-align: center; display: block; border: 1px solid var(--gold); padding: 12px 16px; }
+            .page-header { padding: 80px 20px 40px; }
+            .page-header h1 { font-size: 2rem; }
+            .section { padding: 50px 20px; }
+            .featured { padding: 50px 20px; }
+            .featured-question { font-size: 1.2rem; }
+            .next-section { padding: 40px 20px; }
+            .articles-section { padding: 50px 20px; }
+            .compact-section { padding: 40px 20px; }
+            .compact-list li { flex-direction: column; align-items: flex-start; gap: 4px; }
+            .compact-list .item-date { margin-left: 0; }
+            .media-section { padding: 50px 20px; }
+            .media-item { flex-direction: column; gap: 4px; }
+            .media-item .topic { margin: 0; }
+            .academic-section { padding: 40px 20px; }
+            .follow-section { padding: 50px 20px; }
+            .follow-grid { grid-template-columns: 1fr; }
+            .closing { padding: 50px 20px; }
+            .closing-quote { font-size: 1.1rem; }
+            .connect { padding: 40px 20px; }
+        }
+    </style>
+</head>
+<body>
+
+<nav class="nav">
+    <div class="nav-container">
+        <a href="/" class="nav-logo">Melvin Garita</a>
+        <ul class="nav-links">
+            <li><a href="/cases" class="nav-cta">Cases</a></li>
+            <li><a href="/approach">Approach</a></li>
+            <li><a href="/thoughts" class="active">Thoughts</a></li>
+            <li><a href="/about">About</a></li>
+            <li><a href="#connect">Connect</a></li>
+        </ul>
+        <button class="hamburger" aria-label="Menu" aria-expanded="false">&#9776;</button>
+    </div>
+</nav>
+
+<header class="page-header">
+    <h1>Thoughts</h1>
+    <p class="subtitle">Perspectives on institutional leadership in banking &mdash; and how financial institutions create, sustain, or quietly erode value.</p>
+    <p class="subtitle" style="font-size:0.9rem; color:rgba(255,255,255,0.55);">Over two decades of published analysis and expert commentary.</p>
+    <p class="media-badges">CNN en Espa&ntilde;ol &middot; La Naci&oacute;n &middot; El Financiero &middot; La Rep&uacute;blica</p>
+</header>
+
+<!-- FEATURED SERIES -->
+<section class="featured fade-in">
+    <div class="featured-inner">
+        <p class="featured-label">Featured Series</p>
+        <p class="featured-question">Why do financial institutions with different mandates, capabilities, and competitive realities end up pursuing similar strategies &mdash; and why does strategic convergence quietly erode enterprise value?</p>
+        <p class="featured-text">The few institutions that create lasting advantage deliberately diverge. This series examines what deliberate divergence requires &mdash; and why most organizations resist it.</p>
+
+        <div class="phases-grid">
+            <div class="phase-item"><span class="phase-number">1</span><span class="phase-name">La trampa de la complacencia</span></div>
+            <div class="phase-item"><span class="phase-number">2</span><span class="phase-name">La anatom&iacute;a real del valor bancario</span></div>
+            <div class="phase-item"><span class="phase-number">3</span><span class="phase-name">El riesgo: donde se hace o se quiebra un banco</span></div>
+            <div class="phase-item"><span class="phase-number">4</span><span class="phase-name">Ejecuci&oacute;n y transformaci&oacute;n</span></div>
+            <div class="phase-item"><span class="phase-number">5</span><span class="phase-name">La infraestructura invisible</span></div>
+            <div class="phase-item"><span class="phase-number">6</span><span class="phase-name">El CEO como formador de criterio</span></div>
+            <div class="phase-item"><span class="phase-number">7</span><span class="phase-name">Divergencia estrat&eacute;gica</span></div>
+        </div>
+        <p class="phase-count">7 phases &middot; 21 articles &middot; In progress</p>
+        <a href="https://www.larepublica.net/noticia/convergencia-estrategica" class="featured-cta" target="_blank" rel="noopener">Read the first article &rarr;</a>
+    </div>
+</section>
+
+<!-- WHAT'S NEXT -->
+<section class="next-section fade-in">
+    <div class="next-inner">
+        <p class="section-label">Where my thinking is headed</p>
+        <div class="next-card">
+            <h3>La ilusi&oacute;n de estabilidad</h3>
+            <p>The financial sector is inherently vulnerable to recurring disruptions. These shocks often create systemic instability and lead to capital misallocation rather than genuine stability.</p>
+            <p class="next-date">Summer 2026</p>
+        </div>
+    </div>
+</section>
+
+<!-- LA REPUBLICA -->
+<section class="articles-section fade-in">
+    <p class="section-label">Selected commentary &middot; La Rep&uacute;blica <span class="lang-badge">ES</span></p>
+    <div class="article-card">
+        <h3>Por qu&eacute; imitar a los competidores destruye valor</h3>
+        <p class="article-meta">La Rep&uacute;blica &middot; February 2026</p>
+        <a href="https://www.larepublica.net/noticia/convergencia-estrategica" class="article-link" target="_blank" rel="noopener">Read in La Rep&uacute;blica &rarr;</a>
+    </div>
+    <div class="article-card">
+        <h3>De los prop&oacute;sitos a la ejecuci&oacute;n</h3>
+        <p class="article-meta">La Rep&uacute;blica &middot; January 2026</p>
+        <a href="https://www.larepublica.net/noticia/economia-crecera-5-y-esto-significa-mas-inversion-y-negocios-melvin-garita-banco-nacional" class="article-link" target="_blank" rel="noopener">Read article &rarr;</a>
+    </div>
+</section>
+
+<!-- EL FINANCIERO -->
+<section class="compact-section fade-in">
+    <div class="compact-inner">
+        <p class="section-label">Earlier market analysis &middot; El Financiero &middot; 2016&ndash;2018 <span class="lang-badge">ES</span></p>
+        <p class="compact-intro">Written while managing trading desks at Banco Nacional &mdash; reflecting the market judgment that informs my approach to institutional risk.</p>
+        <ul class="compact-list">
+            <li><span class="item-title">Gato por liebre y valoraci&oacute;n a precios de mercado</span><span class="item-date">Sep 2017</span></li>
+            <li><span class="item-title">A 10 a&ntilde;os del inicio de la Gran Recesi&oacute;n</span><span class="item-date">Jul 2017</span></li>
+            <li><span class="item-title">Brexit: Ense&ntilde;anzas para Costa Rica</span><span class="item-date">Jun 2016</span></li>
+        </ul>
+    </div>
+</section>
+
+<!-- MEDIA -->
+<section class="media-section fade-in">
+    <h2>Selected media appearances</h2>
+    <p style="color:#666; font-size:0.9rem; margin-bottom:30px;">Expert commentary and analysis in national and international media.</p>
+
+    <p class="section-label" style="margin-top:30px;">Featured commentary</p>
+    <div class="media-grid">
+        <div class="media-item"><span class="outlet">CNN en Espa&ntilde;ol</span><span class="topic">Economic analysis &mdash; Costa Rica elections</span><span class="date">Feb 2018</span><a href="https://www.youtube.com/watch?v=gYhrb8SuMZM" target="_blank" rel="noopener">Watch &rarr;</a></div>
+        <div class="media-item"><span class="outlet">CNN en Espa&ntilde;ol</span><span class="topic">Speculative capital flows in Costa Rica</span><span class="date">Jan 2013</span></div>
+        <div class="media-item"><span class="outlet">Panorama Digital</span><span class="topic">Economic impact of international conflict</span><span class="date">Mar 2026</span></div>
+        <div class="media-item"><span class="outlet">Punto de Equilibrio</span><span class="topic">Dollar exchange rate hits record low</span><span class="date">May 2026</span></div>
+    </div>
+
+    <p class="section-label" style="margin-top:40px;">Selected press</p>
+    <div class="media-grid">
+        <div class="media-item"><span class="outlet">La Rep&uacute;blica</span><span class="topic">&iquest;Qu&eacute; hacer para detener la ca&iacute;da de la inversi&oacute;n extranjera?</span><span class="date">Jul 2025</span></div>
+        <div class="media-item"><span class="outlet">La Rep&uacute;blica</span><span class="topic">&iquest;Endeudarse en d&oacute;lares o en colones?</span><span class="date">Feb 2024</span></div>
+        <div class="media-item"><span class="outlet">La Naci&oacute;n</span><span class="topic">Deudores deber&iacute;an ser prudentes ante baja en calificaci&oacute;n de Fitch</span><span class="date">2017</span></div>
+    </div>
+</section>
+
+<!-- ACADEMIC -->
+<section class="academic-section fade-in">
+    <div class="academic-inner">
+        <p class="section-label">Academic &amp; policy contributions</p>
+        <div class="academic-card">
+            <p class="meta">Programa Estado de la Naci&oacute;n &middot; XVIII Informe &middot; 2012</p>
+            <h3>Sostenibilidad, solvencia y contribuci&oacute;n al crecimiento de la pol&iacute;tica fiscal costarricense</h3>
+            <p>Commissioned research examining fiscal sustainability in Costa Rica (2007&ndash;2011) for the country&rsquo;s principal annual report on national development.</p>
+            <a href="https://repositorio.sibdi.ucr.ac.cr/items/1d5a1cd3-2e9c-419f-a508-899d1bc5190a" class="article-link" target="_blank" rel="noopener">View in repository &rarr;</a>
+        </div>
+        <div class="academic-card">
+            <p class="meta">Universidad de Costa Rica &middot; MSc Applied Mathematics &middot; 2014</p>
+            <h3>Modelo de riesgo emisor para los portafolios de inversi&oacute;n del Banco Nacional</h3>
+            <p>Quantitative model for estimating issuer default probabilities applied to the investment portfolios of Costa Rica&rsquo;s largest financial institution.</p>
+        </div>
+    </div>
+</section>
+
+<!-- FOLLOW -->
+<section class="follow-section fade-in">
+    <p class="section-label">Follow my work</p>
+    <div class="follow-grid">
+        <div class="follow-card">
+            <h3>La Rep&uacute;blica</h3>
+            <p>Selected commentary</p>
+            <a href="https://www.larepublica.net/autor/melvin-garita" target="_blank" rel="noopener">View articles &rarr;</a>
+        </div>
+        <div class="follow-card">
+            <h3>LinkedIn</h3>
+            <p>Posts &amp; articles on institutional leadership</p>
+            <a href="https://linkedin.com/in/melvingarita" target="_blank" rel="noopener">Follow &rarr;</a>
+        </div>
+        <div class="follow-card">
+            <h3>This site</h3>
+            <p>Cases, approach, and perspectives</p>
+            <a href="/cases">Explore &rarr;</a>
+        </div>
+    </div>
+</section>
+
+<!-- CLOSING -->
+<section class="closing fade-in">
+    <p class="closing-quote">&ldquo;The quality of institutional judgment compounds over time.&rdquo;</p>
+    <div class="closing-ctas">
+        <a href="/cases">View cases &rarr;</a>
+        <a href="/approach">See my approach &rarr;</a>
+    </div>
+</section>
+
+<!-- CONNECT -->
+<section class="connect" id="connect">
+    <h2>Connect</h2>
+    <p>Writing, teaching, and thinking about how financial institutions create lasting value.</p>
+    <div class="connect-links">
+        <a href="https://linkedin.com/in/melvingarita" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="mailto:melvin@melvingarita.com">melvin@melvingarita.com</a>
+    </div>
+</section>
+
+<footer>
+    <p>&copy; 2026 Melvin Garita Mora &middot; San Jos&eacute;, Costa Rica</p>
+    <p style="margin-top:8px;"><a href="https://linkedin.com/in/melvingarita" target="_blank" rel="noopener">LinkedIn</a> &middot; <a href="mailto:melvin@melvingarita.com">melvin@melvingarita.com</a></p>
+</footer>
+
+<script>
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => { if (entry.isIntersecting) entry.target.classList.add('visible'); });
+    }, { threshold: 0.1 });
+    document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+
+    const hamburger = document.querySelector('.hamburger');
+    const navLinks = document.querySelector('.nav-links');
+    hamburger.addEventListener('click', () => {
+        const isOpen = navLinks.classList.toggle('active');
+        hamburger.setAttribute('aria-expanded', isOpen);
+    });
+    document.querySelectorAll('.nav-links a').forEach(link => {
+        link.addEventListener('click', () => {
+            navLinks.classList.remove('active');
+            hamburger.setAttribute('aria-expanded', 'false');
+        });
+    });
+</script>
+</body>
+</html>
