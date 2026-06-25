@@ -82,7 +82,7 @@
         .article-link { color: var(--gold); font-size: 0.85rem; text-decoration: none; }
         .article-link:hover { text-decoration: underline; }
 
-        /* COMPACT LIST */
+        /* COMPACT LIST 
         .compact-section { background: var(--warm-gray); padding: 60px 40px; }
         .compact-inner { max-width: 900px; margin: 0 auto; }
         .compact-intro { color: #666; font-size: 0.9rem; font-style: italic; margin-bottom: 24px; line-height: 1.6; }
@@ -90,6 +90,55 @@
         .compact-list li { display: flex; justify-content: space-between; align-items: baseline; padding: 12px 0; border-bottom: 1px solid rgba(0,0,0,0.06); font-size: 0.9rem; }
         .item-title { color: var(--dark); }
         .item-date { color: #999; font-size: 0.8rem; white-space: nowrap; margin-left: 20px; }
+        */
+
+        /* COMPACT LIST */
+.compact-section { background: var(--warm-gray); padding: 60px 40px; }
+.compact-inner { max-width: 900px; margin: 0 auto; }
+.compact-intro { color: #666; font-size: 0.9rem; font-style: italic; margin-bottom: 24px; line-height: 1.6; }
+.compact-list { list-style: none; padding: 0; }
+.compact-list li {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    padding: 14px 0;
+    border-bottom: 1px solid rgba(0,0,0,0.06);
+    font-size: 0.9rem;
+}
+
+/* Link reset — kill all default <a> styling inside the list */
+.compact-list a,
+.compact-list a:link,
+.compact-list a:visited,
+.compact-list a:hover,
+.compact-list a:active {
+    text-decoration: none;
+    color: inherit;
+}
+
+.compact-list .item-link {
+    flex: 1;
+    display: inline-flex;
+    align-items: baseline;
+    gap: 8px;
+    transition: color 0.2s ease;
+}
+.compact-list .item-title {
+    color: var(--dark);
+    transition: color 0.2s ease;
+}
+.compact-list .item-link::after {
+    content: '\2192';
+    color: var(--gold);
+    font-size: 0.8rem;
+    opacity: 0;
+    transform: translateX(-4px);
+    transition: opacity 0.2s ease, transform 0.2s ease;
+}
+.compact-list .item-link:hover .item-title { color: var(--gold); }
+.compact-list .item-link:hover::after { opacity: 1; transform: translateX(0); }
+
+.item-date { color: #999; font-size: 0.8rem; white-space: nowrap; margin-left: 20px; }
 
         /* MEDIA */
         .media-section { padding: 70px 40px; max-width: 900px; margin: 0 auto; }
